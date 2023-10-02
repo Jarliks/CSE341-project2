@@ -5,7 +5,7 @@ const doc = {
         title: "Collections Api",
         description: "Collections Api"
     },
-    host: "localhost:8080",
+    host: "cse341-project2-k3dt.onrender.com",
     schemes: ['http', 'https']
 };
 
