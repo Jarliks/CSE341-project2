@@ -5,13 +5,26 @@
     "description": "Collections Api",
     "version": "1.0.0"
   },
-  "host": "cse341-project2-k3dt.onrender.com",
+  "host": "localhost:8080",
   "basePath": "/",
   "schemes": [
     "http",
     "https"
   ],
   "paths": {
+    "/": {
+      "get": {
+        "tags": [
+          "Hello World"
+        ],
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api-docs": {
       "get": {
         "description": "",
