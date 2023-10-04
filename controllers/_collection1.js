@@ -6,8 +6,7 @@ const getSingle = async (req, res) => {
     if (!ObjectId.isValid(req.params.id)) {
         res.status(400).json('Must be a valid ID to retrieve data.');
     } else {
-        const _collection1Id = new ObjectId(req.params.id);
-        mongodb.getDb().db().collection('_collection1').find({ _id: _collection1Id}).toArray((err, lists) => {
+        mongodb.getDb().db().collection('_collection1').find().toArray((err, lists) => {
                 if (err) {
                     res.status(400).json({ message: err});
                 }
